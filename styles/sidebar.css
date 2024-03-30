@@ -1,0 +1,17 @@
+.sidebar{
+    width: 0px;
+    background-color: rgba(233, 223, 204, 0.5);
+    box-shadow: 0 6px 10px rgba(0,0,0,0.5);
+
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+
+    top:60px;
+    left:0px;
+    bottom:0px;
+    transition: width 0.15s}
+
+.sidebar a{
+    display: none;
+}

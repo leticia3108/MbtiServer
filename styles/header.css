@@ -1,0 +1,164 @@
+header{
+    height: 60px;
+    background-color: rgba(233, 223, 204, 0.5);
+    z-index: 100;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;}
+
+.header-left{
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 15px;
+}
+
+.header-middle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+}
+
+.header-right{
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.logo-image{
+    height: 70px;
+    width: 70px;
+    clip-path: circle(40% at 35.3px 35.8px);
+    object-fit: cover;
+    /*border-radius: 54px;*/
+}
+
+.logo-image:hover,
+.search-button:hover,
+.about-us:hover,
+.search-bar:hover,
+.discord-button:hover,
+.hamburger-menu:hover{
+    cursor: pointer;
+}
+
+.hamburger-menu{
+    height: 25px;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100px;
+}
+
+.search-bar-container{
+    flex:1;
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar a{
+    font-size: 15px;
+    font-weight: 550;
+
+    text-align: center;
+    padding-top:23px;
+    padding-bottom:23px;
+}
+
+.sidebar a:hover{
+    cursor: pointer;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+}
+
+.search-bar{
+    flex: 1;
+    max-width: 500px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    font-size: 14px;
+    padding: 0 10px 0 30px;
+    background-color: white;
+}
+
+.search-bar:hover{
+    border-color: rgb(157, 16, 250);
+}
+
+.search-button{
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding: 1px;
+    border-style: solid;
+    border-width: 2px;
+    padding-top: 8px;
+    padding-bottom: 4px;
+    padding-right: 23px;
+    padding-left:20px;
+    background-color: white;
+    z-index:200;
+}
+
+.search-button:hover {
+    box-shadow: inset 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.search-icon{
+    height:25px;
+    object-fit: cover;
+    background-color: white;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    z-index:100;
+    background:none;
+}
+
+.about-us{
+    font-size:14px;
+    font-weight: 550;
+    background-color: rgb(139, 1, 173);
+    color:white;
+    padding: 3px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    border-radius:2px;
+}
+
+.about-us:hover,
+.discord-button:hover{
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.discord-button{
+    border-radius: 25px;
+    background-color: white;
+    border-style:solid;
+    border-width: 1px;
+    padding:1px 6px;
+    height: 30px;
+    display:flex;
+    align-items: center;
+}
+
+.discord-image{
+    height: 15px;
+    background-color:white;
+    object-fit: cover;
+}

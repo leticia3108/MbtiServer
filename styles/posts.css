@@ -1,0 +1,99 @@
+.post-content{
+    display: flex;
+    align-items: center;
+    height: 200px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+.post-text{
+    flex: 1;
+    padding: 0px;
+    height: 133px;
+    margin: 0px 0px 0px 33px;
+    display: grid;
+    grid-template-rows: 25px 1fr 21px;
+    align-items: center;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+
+}
+
+.post-title{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+}
+
+.post-description{
+    font-size: 16px;
+		max-height: 72px;
+    line-height: 24px;
+    text-align: justify;
+		overflow: hidden;
+		white-space: initial;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
+}
+
+.post-author-and-date{
+    display: flex;
+    font-size: 14px;
+    line-height: 21pxx;
+		overflow: hidden;
+		white-space: initial;
+		text-overflow: ellipsis;
+}
+
+.post-image-container{
+    height: 200px;
+    width: 200px;
+    display: grid;
+    gap: 5px 5px;
+    grid-template-rows: 1ft;
+    justify-items: center;
+    align-items: center;
+}
+.post-image{
+    height: 133px;
+    width: 133px;
+    object-fit: cover;
+}
+
+.post-stats{
+	display: flex;
+	align-items: center;
+	height: 33px;
+  justify-content: end;
+}
+
+.post-rating{
+  margin: 5px 0px;
+  display: flex;
+  align-items: center;
+  cursor: default;
+}
+
+.post-rating:not(:last-child){
+  margin-right: 10px;
+}
+
+.post-rating-button{
+  cursor:pointer;
+  margin-right: 5px;
+  color:rgb(118, 105, 131);
+}
+
+.post-rating-selected > .post-rating-button,
+.post-rating-selected > .post-rating-count {
+  color: green;
+}
+
+.post-rating:not(.post-rating-selected) > .post-rating-button:hover{
+  color: black;
+}
